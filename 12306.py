@@ -16,7 +16,7 @@ from selenium.common.exceptions import NoSuchElementException
 class MyMail(object):
     def mail_success(self,price,path):
         self.username = "WyuuServer@163.com"
-        self.authorization_code = 'UDFDDSTNXTBVNNAM'
+        self.authorization_code = 'UDFD******NAM'
         self.server = zmail.server(self.username, self.authorization_code)
         mail_body = {
             'subject': '抢票结果',
@@ -29,7 +29,7 @@ class MyMail(object):
 
     def mail_fail(self,path):
         self.username = "WyuuServer@163.com"
-        self.authorization_code = 'UDFDDSTNXTBVNNAM'
+        self.authorization_code = 'UDFD******NAM'
         self.server = zmail.server(self.username, self.authorization_code)
         mail_body = {
             'subject': '抢票异常',
